@@ -7,4 +7,13 @@ for i in range(1, len(A)):
     if A[i] < m:
         m = A[i]
         p = i + 1
-print(f"The minimum number in this list is {m} and it is the {p}th number.")
+# These ifs are optional and just for the best efficiency.
+# You can instead use just the last print.
+if p == 1:
+    print(f"The minimum number in this list is {m} and it is the 1st number.")
+if p == 2:
+    print(f"The minimum number in this list is {m} and it is the 2nd number.")
+if p == 3:
+    print(f"The minimum number in this list is {m} and it is the 3rd number.")
+if p > 3:
+    print(f"The minimum number in this list is {m} and it is the {p}th number.")
